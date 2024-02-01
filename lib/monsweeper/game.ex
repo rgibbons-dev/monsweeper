@@ -57,27 +57,9 @@ defmodule Monsweeper.Game do
     loop(field, %Turn{pika: pikachu, space: 1})
   end
 
-  # end condition
-  # can expand to handle quit, save, load
-  def loop(code) do
-    case code do
-      -1 -> IO.puts("Game over.")
-      1 -> IO.puts("You win!")
-    end
-  end
-
   def loop(f, t) do
     # check if there are any electrodes left
-    # get all values, put into MapSet (to get unique elements), then get size
-    # if it's one, then we win, else it's two, so we keep going
-    # I could use Enum.any?/2 here, but the size is useful as a return code
-    # win_cond = Map.values(f)
-    #   |> MapSet.new()
-    #   |> MapSet.size()
-    # IO.puts(win_cond)
-    # if win_cond == 1 do
-    #   loop(win_cond)
-    # end
+    # we do so by getting the values and seeing if they are all :x
     win_cond = Map.values(f) |> Enum.all?(fn e -> e == :x end)
     if win_cond do
       IO.puts("You win!")
