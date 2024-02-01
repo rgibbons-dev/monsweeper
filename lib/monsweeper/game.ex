@@ -30,11 +30,9 @@ defmodule Monsweeper.Game do
     instructions = """
       OK, here's how to play. You will enter the
       patch of tall grass at the top-left corner.
-      The patch is five paces wide and five paces long.
-      There will be eight Electrodes hidden in the grass.
-      Your objective is to find all of them and defeat them
-      so we can safely extract them from the grasses
-      while they have fainted.
+      The patch is three paces wide and three paces long.
+      There will be two Electrodes hidden in the grass.
+      Your objective is to find all of them and defeat them!
 
       To move, type into the console 'left', 'right',
       'up', or 'down'. When you run into an Electrode, a
