@@ -1,21 +1,10 @@
 # Monsweeper
 
-**TODO: Add description**
+taking inspiration from other games released in january of 2024, monsweeper applies Pokemon to a familiar favorite: Minesweeper.
 
-## Installation
+play as Ash and Pikachu as they try to save the day in Pallet Town!
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `monsweeper` to your list of dependencies in `mix.exs`:
+## Running the game
 
-```elixir
-def deps do
-  [
-    {:monsweeper, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/monsweeper>.
+clone the repository, `cd` into it, then enter `mix run -r "Monsweeper.main()"` into a teletype. There will be plenty of instructions that explain how the game works on startup. Have fun!
 
