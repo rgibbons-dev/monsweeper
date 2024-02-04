@@ -12,3 +12,6 @@ clone the repository, `cd` into it, then enter `mix run -e "Monsweeper.main()"` 
 
 enter `mix test` to run the test suite
 
+## Extra extra, read all about it
+
+read about the making of monsweeper [here](https://rgibbons-dev.github.io/monsweeper)

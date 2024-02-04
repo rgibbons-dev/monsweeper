@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>about monsweeper</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+            padding: 0 20px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        @media (max-width: 600px) {
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>On `monsweeper`</h1>
+    <p>
+        Monsweeper was a project I did for a take-home interview. I had to write it in Elixir, which I had a little
+        familiarity with, but not a lot of experience. It came with a deadline, so I had to be effective in using my
+        time. To start out, that wasn't really the case. I chose the RPG option, immediately thinking of making a
+        dungeon crawler. Upon a quick look on Github though, it turns out that this was already thought of -- creating a
+        dungeon crawler is an exercise from a book! That is to say, there's multiple identical copies of this Elixir
+        Dungeon Crawler up there. I wanted mine to be unique, so I kept thinking. I decided on making more of a
+        text-based game, inspired by Chinatown (and using some dialogue lifted directly from the script). Early on, I
+        realized how much writing that would be, so I pivoted again. Palworld had just come out, so I thought about
+        making something Pokemon related. I don't know how the idea to do a Minesweeper inspired game came along, but it
+        came to me. The idea was to have it resemble a dungeon crawler without actually being a dungeon crawler. There
+        was still a randomized component, that being the placement of the Electrodes (the "mines"), but I figured it
+        would be straightforward enough to complete in a couple days, which was the goal. It was interesting
+        experimenting with immutable state, but it didn't cause me as many issues as I expected. Neither did the
+        recursion. Using guard functions to model different outcomes made a lot of sense. I did lean on the previously
+        mentioned repositories on Github as a model for what I could do, and
+        that made it a lot easier. This helped me correctly model the data (Mon, Turn, Grass), and everything sort of
+        fell into place after that. I did have trouble running it though, and I wish I had a better solution than what's
+        in the readme, but that's all the time I had.
+    </p>
+</body>
+</head>
